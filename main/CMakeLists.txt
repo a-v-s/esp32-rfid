@@ -1,0 +1,9 @@
+idf_component_register(
+	SRCS 
+		"esp32-rfid.c"
+	INCLUDE_DIRS 
+		"."
+	REQUIRES
+		ucdev
+		esp_timer
+)

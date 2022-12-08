@@ -1,0 +1,19 @@
+idf_component_register(
+	SRCS 
+		bsrfid/cards/picc.c
+		bsrfid/drivers/rc52x.c
+		bsrfid/drivers/rc52x_ref.c
+		bsrfid/drivers/rc52x_transport.c
+		libhalglue/bshal/esp32/bshal_gpio_esp32.c
+		libhalglue/bshal/esp32/bshal_i2cm_esp32.c
+		libhalglue/bshal/esp32/bshal_spim_esp32.c
+	INCLUDE_DIRS 
+		libhalglue/hal/
+		libhalglue/common/
+		libhalglue/bshal/
+		libhalglue/bshal/esp32
+		bsrfid/drivers/
+		bsrfid/cards/
+	REQUIRES 
+		driver
+)

@@ -1,0 +1,6 @@
+[submodule "components/ucdev/bsrfid"]
+	path = components/ucdev/bsrfid
+	url = https://github.com/a-v-s/bsrfid
+[submodule "components/ucdev/libhalglue"]
+	path = components/ucdev/libhalglue
+	url = https://github.com/a-v-s/libhalglue
