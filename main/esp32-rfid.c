@@ -23,13 +23,20 @@
 #define SPI_CS 2
 
 
-#else
+#elif defined CONFIG_IDF_TARGET_ESP32S3
 #define HW_NR    SPI2_HOST
 
-#define SPI_SCK 17
-#define SPI_MISO 16
-#define SPI_MOSI  4
-#define SPI_CS 2
+#define SPI_SCK  48
+#define SPI_MISO 21
+#define SPI_MOSI 20
+#define SPI_CS   19
+#elif defined CONFIG_IDF_TARGET_ESP32C3 
+#define HW_NR    SPI2_HOST
+
+#define SPI_SCK  9
+#define SPI_MISO 12
+#define SPI_MOSI 18
+#define SPI_CS   19
 
 #endif
 
